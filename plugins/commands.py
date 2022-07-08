@@ -91,7 +91,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ ᴀᴊᴏᴜᴛᴇᴢ-ᴍᴏɪ ᴀ ᴠᴏs ɢʀᴏᴜᴘᴇs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🔍 ʀᴇᴄʜᴇʀᴄʜᴇʀ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 𝐍𝐨𝐮𝐯𝐞𝐥𝐥𝐞𝐬', url='https://t.me/TmMainChannel')
+            InlineKeyboardButton('🤖 𝐍𝐨𝐮𝐯𝐞𝐥𝐥𝐞𝐬', url='https://t.me/VisionsTv')
         ], [
             InlineKeyboardButton('ℹ️ 𝐀𝐈𝐃𝐄𝐒', callback_data='help'),
             InlineKeyboardButton('🤔 𝐀 𝐏𝐑𝐎𝐏𝐎𝐒', callback_data='about')
@@ -259,7 +259,7 @@ async def channel_info(bot, message):
     else:
         raise ValueError("Unexpected type of CHANNELS")
 
-    text = '📑 **Canaux/groupes indexés**\n'
+    text = '📑 **Canaux/Groupes indexés**\n'
     for channel in channels:
         chat = await bot.get_chat(channel)
         if chat.username:
@@ -469,7 +469,7 @@ async def settings(client, message):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await message.reply_text(
-            text=f"<b>Change Your Settings for {title} As Your Wish ⚙</b>",
+            text=f"<b>Modifier vos paramètres pour {title} Comme vous le souhaitez ⚙</b>",
             reply_markup=reply_markup,
             disable_web_page_preview=True,
             parse_mode="html",
@@ -483,7 +483,7 @@ async def save_template(client, message):
     sts = await message.reply("Checking template")
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"Vous êtes administrateur anonyme. Utilisez /connect {message.chat.id} en PM")
     chat_type = message.chat.type
 
     if chat_type == "private":
@@ -494,10 +494,10 @@ async def save_template(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                await message.reply_text("Assurez-vous que je suis présent dans votre groupe!!", quote=True)
                 return
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            await message.reply_text("Je ne suis connecté à aucun groupe!", quote=True)
             return
 
     elif chat_type in ["group", "supergroup"]:
