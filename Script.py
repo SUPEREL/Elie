@@ -38,7 +38,7 @@ class script(object):
 <b>NOTE:</b>
 1. Telegram ne vous permettra pas d’envoyer des boutons sans aucun contenu, le contenu est donc obligatoire.
 2. Bᴇʟʟᴇ Aʟɪᴄᴇ prend en charge les boutons avec n’importe quel type de média de télégramme.
-3. Les boutons doivent être correctement analysés au format MARKDOWN
+3. Les boutons doivent être correctement Analysés
 
 <b>URL Buttons:</b>
 <code>Bᴇʟʟᴇ Aʟɪᴄᴇ votre meilleure amie 😘</code>
