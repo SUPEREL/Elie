@@ -19,7 +19,7 @@ class script(object):
 - <a href=https://t.me/Michel1993><b><i>🐿 💈 𝐒𝐔𝐏𝐄𝐑 𝐌𝐀𝐍 💈🐿</i></b></a>"""
     MANUELFILTER_TXT = """Aide: <b>Filtres</b>
 
-- Le filtre est la fonctionnalité où les utilisateurs peuvent définir des réponses automatisées pour un mot-clé particulier et Belle Alice répondra chaque fois que ce mot-clé est trouvé le message
+- Le filtre est ma fonctionnalité où vous pouvez définir des réponses automatisées pour un mot-clé particulier et Moi Belle Alice répondra à chaque fois que ce mot-clé est employé dans le message
 
 <b>NOTE:</b>
 1. Bᴇʟʟᴇ Aʟɪᴄᴇ devrait avoir un privilège d’administrateur.
@@ -33,7 +33,7 @@ class script(object):
 • /delall - <code>supprimer tous les filtres dans un chat (chat owner only)</code>"""
     BUTTON_TXT = """Aide: <b>Bouttons</b>
 
-- Bᴇʟʟᴇ Aʟɪᴄᴇ prend en charge les boutons en ligne d’URL et d’alerte.
+- Bᴇʟʟᴇ Aʟɪᴄᴇ prends en charge les Boutons en ligne d’URL et d’alerte.
 
 <b>NOTE:</b>
 1. Telegram ne vous permettra pas d’envoyer des boutons sans aucun contenu, le contenu est donc obligatoire.
@@ -41,10 +41,10 @@ class script(object):
 3. Les boutons doivent être correctement analysés au format MARKDOWN
 
 <b>URL Buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/Belalicebot)</code>
+<code>Bᴇʟʟᴇ Aʟɪᴄᴇ votre meilleure amie 😘</code>
 
 <b>Boutons d'alerte:</b>
-<code>[Button Text](buttonalert:Je suis la soeur de Katnice)</code>"""
+<code>Un petit secret🤫 : Je suis la soeur de Katnice</code>"""
     AUTOFILTER_TXT = """Aide: <b>Filtre Auto</b>
 
 <b>NOTE:</b>
