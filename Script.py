@@ -80,7 +80,7 @@ ce sont les caractéristiques supplémentaires de la Bᴇʟʟᴇ Aʟɪᴄᴇ
 <b>NOTE:</b>
 Ce module ne fonctionne que pour mes administrateurs
 
-<b>Commands and Usage:</b>
+<b>Commandes et utilisation:</b>
 • /logs - <code>to get the rescent errors</code>
 • /stats - <code>to get status of files in db.</code>
 • /delete - <code>to delete a specific file from db.</code>
