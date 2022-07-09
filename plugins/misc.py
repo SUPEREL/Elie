@@ -166,10 +166,10 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
     if imdb:
         caption = IMDB_TEMPLATE.format(
             query = imdb['title'],
-            title = imdb['titre'],
+            title = imdb['title'],
             votes = imdb['votes'],
             aka = imdb["aka"],
-            seasons = imdb["saisons"],
+            seasons = imdb["seasons"],
             box_office = imdb['box_office'],
             localized_title = imdb['localized_title'],
             kind = imdb['kind'],
@@ -178,8 +178,8 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             runtime = imdb["runtime"],
             countries = imdb["pays"],
             certificates = imdb["certificates"],
-            languages = imdb["langages"],
-            director = imdb["directeur"],
+            languages = imdb["languages"],
+            director = imdb["director"],
             writer = imdb["writer"],
             producer = imdb["producer"],
             composer = imdb["composer"],
