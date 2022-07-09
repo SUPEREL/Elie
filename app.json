@@ -81,7 +81,7 @@
         "CUSTOM_FILE_CAPTION": {
             "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
             "required": false,
-            "value": "All New Movies Available Only @TechnoMoviesCollection"
+            "value": "All New Movies Available Only @VisionsTv"
         },
         "UPSTREAM_REPO": {
             "description": "Don't Change Or It Won't Work",
@@ -100,7 +100,7 @@
         },
         "COLLECTION_NAME": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
-            "value": "Telegram_files_VisionsTv",
+            "value": "Telegram_files",
             "required": false
         },
         "CACHE_TIME": {
