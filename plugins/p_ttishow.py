@@ -84,7 +84,7 @@ async def leave_a_chat(bot, message):
 @Client.on_message(filters.command('disable') & filters.user(ADMINS))
 async def disable_chat(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Donne-moi ton identifiant de chat')
+        return await message.reply('Donne-moi ton ID de chat')
     r = message.text.split(None)
     if len(r) > 2:
         reason = message.text.split(None, 2)[2]
@@ -95,7 +95,7 @@ async def disable_chat(bot, message):
     try:
         chat_ = int(chat)
     except:
-        return await message.reply('Donne-moi un identifiant de chat valide')
+        return await message.reply('Donne-moi un ID de chat valide')
     cha_t = await db.get_chat(int(chat_))
     if not cha_t:
         return await message.reply("Chat introuvable dans la base de données")
@@ -121,12 +121,12 @@ async def disable_chat(bot, message):
 @Client.on_message(filters.command('enable') & filters.user(ADMINS))
 async def re_enable_chat(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Donne-moi ton identifiant de chat')
+        return await message.reply('Donne-moi ID de chat')
     chat = message.command[1]
     try:
         chat_ = int(chat)
     except:
-        return await message.reply('Donne-moi un identifiant de chat valide')
+        return await message.reply('Donne-moi un ID de chat valide')
     sts = await db.get_chat(int(chat))
     if not sts:
         return await message.reply("Chat introuvable dans la base de données !")
@@ -155,12 +155,12 @@ async def get_ststs(bot, message):
 # @Client.on_message(filters.command('invite') & filters.user(ADMINS))
 async def gen_invite(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Donne-moi ton identifiant de chat')
+        return await message.reply('Donne-moi ID de chat')
     chat = message.command[1]
     try:
         chat = int(chat)
     except:
-        return await message.reply('Donne-moi un identifiant de chat valide')
+        return await message.reply('Donne-moi un ID de chat valide')
     try:
         link = await bot.create_chat_invite_link(chat)
     except ChatAdminRequired:
