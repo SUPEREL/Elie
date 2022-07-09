@@ -59,7 +59,7 @@ async def save_group(bot, message):
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Donnez-moi ton identifiant de chat')
+        return await message.reply('Donnez-moi ton ID de chat')
     chat = message.command[1]
     try:
         chat = int(chat)
