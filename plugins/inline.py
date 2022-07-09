@@ -33,7 +33,7 @@ async def answer(bot, query):
     if AUTH_CHANNEL and not await is_subscribed(bot, query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='Vous devez vous abonner à ma chaîne pour utiliser le bot',
+                           switch_pm_text='Abonne-toi à ma chaîne pour utiliser le bot',
                            switch_pm_parameter="subscribe")
         return
 
@@ -70,11 +70,11 @@ async def answer(bot, query):
                 title=file.file_name,
                 file_id=file.file_id,
                 caption=f_caption,
-                description=f'Taille: {get_size(file.file_size)}\nType: {file.file_type}',
+                description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
                 reply_markup=reply_markup))
 
     if results:
-        switch_pm_text = f"{emoji.FILE_FOLDER} Résultats - {total}"
+        switch_pm_text = f"{emoji.FILE_FOLDER} Results - {total}"
         if string:
             switch_pm_text += f" for {string}"
         try:
@@ -103,7 +103,7 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query)
+            InlineKeyboardButton('Rechercher à nouveau', switch_inline_query_current_chat=query)
         ]
         ]
     return InlineKeyboardMarkup(buttons)
