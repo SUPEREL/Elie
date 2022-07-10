@@ -773,10 +773,10 @@ async def auto_filter(client, msg, spoll=False):
     if imdb:
         cap = TEMPLATE.format(
             query=search,
-            title=imdb['Title'],
+            title=imdb['title'],
             votes=imdb['votes'],
             aka=imdb["aka"],
-            seasons=imdb["Saisons"],
+            seasons=imdb["seasons"],
             box_office=imdb['box_office'],
             localized_title=imdb['localized_title'],
             kind=imdb['kind'],
